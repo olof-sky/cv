@@ -11,14 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/fas.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
     <nav>
-      <a href="">Om mig</a>
-      <a href="">Erfarenhet</a>
-      <a href="">Projekt</a>
-      <a href="">Kontakt</a>
+      <a href="#about">Om mig</a>
+      <a href="#experience">Erfarenhet</a>
+      <a href="#projects">Projekt</a>
+      <a href="#contact">Kontakt</a>
     </nav>
     <div class="wrapper">
       <div class="home">
@@ -34,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="about">
+      <div class="about" id="about">
         <div class="experience-container">
           <ul>
             <li><h3>JavaScript/Vue/React</h3></li>
@@ -57,7 +61,7 @@
         </div>
       </div>
       <div class="gradient-bkg">
-        <div class="experience">
+        <div class="experience" id="experience">
           <h1>Erfarenhet</h1>
           <div class="cards">
             <div class="experience-card">
@@ -156,8 +160,78 @@
             </div>
           </div>
         </div>
-        <div class="projects"></div>
-        <div class="contact"></div>
+        <div class="projects" id="projects">
+          <h1>Projekt</h1>
+          <div class="big-card">
+            <div class="head">
+              <h3>KANBAN APPLIKATION - PÅGÅENDE</h3>
+              <h4>Backend/Frontend</h4>
+            </div>
+            <div class="content">
+              <p>
+                CRUD, REST API, MySQL Relationsdatabas. Controller/Servicelayer,
+                validering och säkerhet. Byggs med Node.js/express serverside
+                och Sequelize för att kontakta DB. Löst kopplad till React
+                frontend med axios API calls från separat server.
+              </p>
+              <a href="https://github.com/olof-sky/kanban-app"
+                >https://github.com/olof-sky/kanban-app</a
+              >
+            </div>
+          </div>
+          <div class="big-card">
+            <div class="head">
+              <h3>PERSONLIG WEBBPORTFOLIO</h3>
+              <h4>Backend/Frontend</h4>
+            </div>
+            <div class="content">
+              <p>
+                Min personliga portfolio online skriven från grunden i vue.js,
+                twilio sendgrid används med mailserver och appen hostas med
+                node/express på mitt webhotell.
+              </p>
+              <a href="https://olofschylander.com"
+                >https://olofschylander.com</a
+              >
+            </div>
+          </div>
+          <div class="big-card">
+            <div class="head">
+              <h3>WEBBAPPLIKATION, HJÄLPVERKTYG</h3>
+              <h4>Backend/Frontend</h4>
+            </div>
+            <div class="content">
+              <p>Hjälpverktyg/datetime-baserad kalkulator för onlinespel</p>
+              <a
+                href="https://github.com/olof-sky/frag_calculator/blob/main/frag_calculator.py"
+                >https://github.com/olof-sky/frag_calculator/blob/main/frag_calculator.py</a
+              >
+            </div>
+          </div>
+          <div class="big-card">
+            <div class="head">
+              <h3>WEBSCRAPING, API, DATABAS</h3>
+              <h4>Backend</h4>
+            </div>
+            <div class="content">
+              <p>
+                Sökfunktionsbaserad API hämtning, katelogisering av varor samt
+                sortering i databas där prisjämföring sker
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact" id="contact">
+          <a href="https://www.linkedin.com/in/olof-schylander-309a67211/"
+            ><img src="assets/linkedin-in.svg"
+          /></a>
+          <a href="https://github.com/olof-sky"
+            ><img src="assets/github.svg"
+          /></a>
+          <a href="mailto:olofschylander@gmail.com"
+            ><img src="assets/envelope-regular.svg"
+          /></a>
+        </div>
       </div>
     </div>
   </body>
