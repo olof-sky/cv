@@ -161,8 +161,22 @@ img {
   width: 5rem;
 }
 
+.projects a {
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+
 .gradient-bkg {
-  background: linear-gradient(#010101, #09181d, #0b2026, #133843, #205f71);
+  background: linear-gradient(
+    #010101,
+    #09181d,
+    #09181d,
+    #0b2026,
+    #133843,
+    rgba(202, 181, 171, 1),
+    rgba(175, 153, 169, 1),
+    #205f71
+  );
 }
 
 /* CARD */
@@ -189,6 +203,9 @@ img {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
   padding: 2.5rem;
 }
 
