@@ -1,0 +1,64 @@
+{
+  "work": [
+    {
+      "title": "UTVECKLARE/KONSULT",
+      "company": "2022 - HiQ Mälardalen",
+      "description": "Utbildad i SiteVisions CMS. Förvaltning av SCALA-projekt med användning av MySQL och Play Framework (MVC).",
+      "tools": ["HTML", "CSS", "SASS", "JavaScript", "SCALA", "SiteVision"]
+    },
+    {
+      "title": "UTVECKLARE - PRAKTIK",
+      "company": "2021 - BR Ströms AB",
+      "description": "Utveckling av Vue/JS applikation med mål att användas inom vården till hjälp för strokeskadade patienter att träna upp sin läs/tal-förmåga.",
+      "tools": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "education": [
+    {
+      "company": "LEXICON",
+      "degree": "2022 - Frontend Developer",
+      "description": "Utbildning i UI/UX, JavaScript, HTML, CSS och React."
+    },
+    {
+      "company": "LEXICON",
+      "degree": "2021 - JAVA/Fullstack",
+      "description": "Utbildning i Java SE, backend/frontend med Springboot, diverse ramverk, HTML, CSS."
+    },
+    {
+      "company": "SiteVision",
+      "degree": "2022 - Certified Website Developer : CSWD419",
+      "description": "Utbildning i SiteVisions CMS."
+    },
+    {
+      "company": "Udemy",
+      "degree": "2021 - Python 100 days",
+      "description": "Utbildning i HTML, CSS, Python."
+    }
+  ],
+  "projects": [
+    {
+      "title": "KANBAN APPLIKATION - PÅGÅENDE",
+      "type": "Backend/Frontend",
+      "description": "CRUD, REST API, MySQL Relationsdatabas. Controller/Servicelayer, validering och säkerhet. Byggs med Node.js/express serverside och Sequelize för att kontakta DB. Löst kopplad till React frontend med axios API calls från separat server.",
+      "link": "https://github.com/olof-sky/kanban-app"
+    },
+    {
+      "title": "PERSONLIG WEBBPORTFOLIO",
+      "type": "Backend/Frontend",
+      "description": "Min personliga portfolio online skriven från grunden i vue.js, twilio sendgrid används med mailserver och appen hostas med node/express på mitt webhotell.",
+      "link": "https://olofschylander.com"
+    },
+    {
+      "title": "WEBBAPPLIKATION, HJÄLPVERKTYG",
+      "type": "Backend/Frontend",
+      "description": "Hjälpverktyg/datetime-baserad kalkulator för onlinespel.",
+      "link": "https://github.com/olof-sky/frag_calculator/blob/main/frag_calculator.py"
+    },
+    {
+      "title": "WEBSCRAPING, API, DATABAS",
+      "type": "Backend",
+      "description": "Sökfunktionsbaserad API hämtning, katelogisering av varor samt sortering i databas där prisjämföring sker.",
+      "link": ""
+    }
+  ]
+}
