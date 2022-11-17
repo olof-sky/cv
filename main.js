@@ -6,20 +6,29 @@ const bigCardBorderColors = ["#5CD9C2", "#DAC168", "#5CDC5A", "#E75757"];
 
 //Helpers
 function getBorderColor(type) {
-  if (type === "big")
+  if (type == "big")
     return bigCardBorderColors[
       Math.floor(Math.random() * bigCardBorderColors.length)
     ];
-  if (type === "small")
+  if (type == "small")
     return borderColors[Math.floor(Math.random() * borderColors.length)];
 }
 
-//Observe cards
-const observer = new IntersectionObserver((cards) => {
-  cards.forEach((card) => {
-    if (card.isIntersecting) {
-      card.target.classList.add("active-card");
-    } else card.target.classList.remove("active-card");
+//Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      if (entry.target.classList.value === "card") {
+        entry.target.classList.add("active-card");
+      }
+      if (entry.target.classList.value === "home") {
+        document.querySelector(".back-btn").classList.remove("show-arrow");
+      }
+    } else {
+      document.querySelector(".back-btn").classList.add("show-arrow");
+      if (entry.target.classList.value === "card active-card")
+        entry.target.classList.remove("active-card");
+    }
   });
 });
 
@@ -27,6 +36,8 @@ function observeCard() {
   cards = [...document.querySelectorAll(".card")];
   cards.map((card) => observer.observe(card));
 }
+
+observer.observe(document.querySelector(".home"));
 
 //Create card functions
 function createWorkCard(work) {
