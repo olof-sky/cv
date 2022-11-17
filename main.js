@@ -27,6 +27,7 @@ function createWorkCard(work) {
   </div>`;
 
   workCard.querySelector(".tools").appendChild(toolsUl);
+  workCard.classList.add("card");
   experienceCards.appendChild(workCard);
 }
 
@@ -44,6 +45,7 @@ function createEducationCard(education) {
     </div>
   </div>`;
 
+  educationCard.classList.add("card");
   educationCards.appendChild(educationCard);
 }
 
@@ -68,6 +70,7 @@ function createProjectCard(project) {
     projectCard.querySelector(".content").appendChild(link);
   }
 
+  projectCard.classList.add("card");
   projectCards.appendChild(projectCard);
 }
 
