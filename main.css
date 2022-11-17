@@ -66,13 +66,11 @@ nav {
   display: flex;
   justify-content: center;
   width: 10rem;
-}
-
-.nav-link a {
+  height: 2rem;
 }
 
 .nav-link a:hover {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
 }
 
 .wrapper {
@@ -174,6 +172,10 @@ img {
   width: 5rem;
 }
 
+.contact img:hover {
+  opacity: 0.6;
+}
+
 .projects {
   gap: 5rem;
 }
@@ -205,9 +207,18 @@ img {
   margin-top: 5rem;
 }
 
+.card {
+  opacity: 0;
+}
+
+.active-card {
+  opacity: 1;
+  transition: all linear 0.7s;
+}
+
 .experience-card {
   max-width: 20rem;
-  border: 1px solid rgba(59, 84, 56, 1);
+  border: 1px solid #3b5438;
   background-color: rgba(9, 10, 11, 0.384);
 }
 
