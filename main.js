@@ -1,10 +1,24 @@
 const experienceCards = document.querySelector(".experience .cards");
 const educationCards = document.querySelector(".education .cards");
 const projectCards = document.querySelector(".projects");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+let hamburgerActive = false;
+const dropDownMenu = document.querySelector(".drop-down-menu");
+const navLinks = document.querySelectorAll(".nav-link.mobile");
 const borderColors = ["#205F71", "#3B5438"];
 const bigCardBorderColors = ["#5CD9C2", "#DAC168", "#5CDC5A", "#E75757"];
 
 //Helpers
+const throttle = (fn, delay) => {
+  let time = Date.now();
+  return () => {
+    if (time + delay - Date.now() <= 0) {
+      fn();
+      time = Date.now();
+    }
+  };
+};
+
 function getBorderColor(type) {
   if (type == "big")
     return bigCardBorderColors[
@@ -12,6 +26,25 @@ function getBorderColor(type) {
     ];
   if (type == "small")
     return borderColors[Math.floor(Math.random() * borderColors.length)];
+}
+
+function toggleHamburgerVisibility(e) {
+  console.log(this.oldScroll);
+  if (this.oldScroll < this.scrollY) hamburgerMenu.style.display = "none";
+  else hamburgerMenu.style.display = "block";
+  this.oldScroll = this.scrollY;
+}
+
+function toggleHamburger() {
+  if (hamburgerActive) {
+    hamburgerMenu.classList.remove("active");
+    dropDownMenu.classList.remove("active");
+    hamburgerActive = !hamburgerActive;
+  } else {
+    hamburgerMenu.classList.add("active");
+    dropDownMenu.classList.add("active");
+    hamburgerActive = !hamburgerActive;
+  }
 }
 
 //Observer
@@ -134,3 +167,8 @@ fetch("./data/experience.json")
     });
     observeCard();
   });
+
+//Event listeners
+hamburgerMenu.addEventListener("click", toggleHamburger);
+navLinks.forEach((link) => link.addEventListener("click", toggleHamburger));
+window.addEventListener("scroll", throttle(toggleHamburgerVisibility, 100));
