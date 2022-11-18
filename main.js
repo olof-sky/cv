@@ -28,7 +28,7 @@ function getBorderColor(type) {
     return borderColors[Math.floor(Math.random() * borderColors.length)];
 }
 
-function toggleHamburgerVisibility(e) {
+function toggleHamburgerOnScroll(e) {
   console.log(this.oldScroll);
   if (this.oldScroll < this.scrollY) hamburgerMenu.style.display = "none";
   else hamburgerMenu.style.display = "block";
@@ -171,4 +171,4 @@ fetch("./data/experience.json")
 //Event listeners
 hamburgerMenu.addEventListener("click", toggleHamburger);
 navLinks.forEach((link) => link.addEventListener("click", toggleHamburger));
-window.addEventListener("scroll", throttle(toggleHamburgerVisibility, 100));
+window.addEventListener("scroll", throttle(toggleHamburgerOnScroll, 100));
