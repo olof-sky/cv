@@ -5,6 +5,7 @@
   color: white;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
 }
 
 ul {
@@ -21,6 +22,13 @@ html,
 body {
   scroll-behavior: smooth;
   background-color: #010101;
+  min-width: 100vw;
+}
+
+.wrapper {
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
 }
 
 h1 {
@@ -52,6 +60,14 @@ a {
   font-size: 1.5rem;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+.drop-down-menu {
+  display: none;
+}
+
 nav {
   z-index: 1;
   display: flex;
@@ -74,12 +90,6 @@ nav {
   font-size: 1.6rem;
 }
 
-.wrapper {
-  display: grid;
-  margin: 0 auto;
-  width: 100%;
-}
-
 .home {
   display: flex;
   flex-direction: column;
@@ -91,14 +101,6 @@ nav {
   max-height: 100vh;
   width: 100%;
   margin: 0 auto;
-}
-
-.home-background-image {
-  position: absolute;
-  min-width: 100vw;
-  min-height: fit-content;
-  width: 100%;
-  height: 100%;
 }
 
 .welcome-text {
@@ -120,7 +122,7 @@ nav {
 }
 
 .upper-text * {
-  margin-right: 40px;
+  margin-right: 2rem;
 }
 
 .logo {
@@ -169,7 +171,6 @@ img {
 }
 
 .contact {
-  width: 41.5rem;
   margin: 8rem auto;
   display: flex;
   flex-direction: row;
@@ -206,6 +207,7 @@ img {
     rgba(175, 153, 169, 1),
     #205f71
   );
+  width: 100%;
 }
 
 .back-btn {
@@ -304,6 +306,183 @@ img {
 
 .big-card p {
   font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .drop-down-menu {
+    display: none;
+  }
+
+  .drop-down-menu.active {
+    position: fixed;
+    display: block;
+    background-color: #010101f8;
+    z-index: 5;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .menu-items-container {
+    display: flex;
+    margin-top: 12rem;
+    gap: 4rem;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .hamburger-menu {
+    position: fixed;
+    display: block;
+    z-index: 6;
+    right: 2rem;
+    top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    transition: all 1s;
+  }
+
+  .hamburger-menu.active {
+    position: fixed;
+    display: block;
+    z-index: 6;
+    right: 2rem;
+    top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    transition: all 1s;
+  }
+
+  .hamburger-menu #line1 {
+    position: block;
+    transform: rotate(0deg);
+    transition: all linear 0.1s;
+  }
+
+  .hamburger-menu #line2 {
+    opacity: 1;
+  }
+
+  .hamburger-menu #line3 {
+    position: block;
+    transform: rotate(0deg);
+    transition: all linear 0.1s;
+  }
+
+  .hamburger-menu.active #line1 {
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all linear 0.1s;
+  }
+
+  .hamburger-menu.active #line2 {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active #line3 {
+    position: absolute;
+    transform: rotate(-45deg);
+    transition: all linear 0.1s;
+  }
+
+  .hamburger-menu .container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .hamburger-menu .container .line {
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .nav-link a {
+    font-size: 2rem;
+  }
+
+  .welcome-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .upper-text * {
+    margin-right: 1rem;
+  }
+
+  .home {
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .about {
+    margin: 5rem;
+  }
+
+  .experience-container {
+    margin-top: 5rem;
+  }
+
+  .about-me-container {
+    gap: 5rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .experience,
+  .education,
+  .projects,
+  .contact {
+    margin-top: 5rem;
+  }
+
+  .big-card {
+    max-width: 80vw;
+    margin: 0;
+  }
+
+  .contact {
+    max-width: 80vw;
+  }
+
+  .contact img {
+    width: 3rem;
+  }
+
+  .back-btn.show-arrow {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
