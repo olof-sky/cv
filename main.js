@@ -2,11 +2,12 @@ const experienceCards = document.querySelector(".experience .cards");
 const educationCards = document.querySelector(".education .cards");
 const projectCards = document.querySelector(".projects");
 const hamburgerMenu = document.querySelector(".hamburger-menu");
-let hamburgerActive = false;
 const dropDownMenu = document.querySelector(".drop-down-menu");
 const navLinks = document.querySelectorAll(".nav-link.mobile");
+
 const borderColors = ["#205F71", "#3B5438"];
 const bigCardBorderColors = ["#5CD9C2", "#DAC168", "#5CDC5A", "#E75757"];
+let hamburgerActive = false;
 
 //Helpers
 const throttle = (fn, delay) => {
@@ -19,6 +20,7 @@ const throttle = (fn, delay) => {
   };
 };
 
+//Functionality
 function getBorderColor(type) {
   if (type == "big")
     return bigCardBorderColors[
@@ -29,7 +31,6 @@ function getBorderColor(type) {
 }
 
 function toggleHamburgerOnScroll(e) {
-  console.log(this.oldScroll);
   if (this.oldScroll < this.scrollY) hamburgerMenu.style.display = "none";
   else hamburgerMenu.style.display = "block";
   this.oldScroll = this.scrollY;
