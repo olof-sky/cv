@@ -31,7 +31,11 @@ function getBorderColor(type) {
 }
 
 function toggleHamburgerOnScroll(e) {
-  if (this.oldScroll < this.scrollY) hamburgerMenu.style.display = "none";
+  if (
+    this.oldScroll < this.scrollY &&
+    !dropDownMenu.classList.contains("active")
+  )
+    hamburgerMenu.style.display = "none";
   else hamburgerMenu.style.display = "block";
   this.oldScroll = this.scrollY;
 }
