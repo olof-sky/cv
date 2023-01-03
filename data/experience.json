@@ -37,6 +37,12 @@
   ],
   "projects": [
     {
+      "title": "MOVIE APP",
+      "type": "Frontend",
+      "description": "Arbete med API-anropp mot omdb för att hämta filmdata, spara favoriter och historik.",
+      "link": "https://github.com/olof-sky/movie-app"
+    },
+    {
       "title": "KANBAN APPLIKATION - PÅGÅENDE",
       "type": "Backend/Frontend",
       "description": "CRUD, REST API, MySQL Relationsdatabas. Controller/Servicelayer, validering och säkerhet. Byggs med Node.js/express serverside och Sequelize för att kontakta DB. Löst kopplad till React frontend med axios API calls från separat server.",
