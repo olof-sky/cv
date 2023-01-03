@@ -15,6 +15,11 @@
   ],
   "education": [
     {
+      "company": "THE ODIN PROJECT - Foundations",
+      "degree": "2022 - HTML, CSS, Git, JavaScript",
+      "description": "Utbildning i HTML, CSS, Git, JavaScript."
+    },
+    {
       "company": "LEXICON",
       "degree": "2022 - Frontend Developer",
       "description": "Utbildning i UI/UX, JavaScript, HTML, CSS och React."
