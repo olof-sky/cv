@@ -15,13 +15,13 @@
   ],
   "education": [
     {
-      "company": "THE ODIN PROJECT - Foundations",
-      "degree": "2022 - HTML, CSS, Git, JavaScript",
+      "company": "THE ODIN PROJECT",
+      "degree": "2022 - Foundations",
       "description": "Utbildning i HTML, CSS, Git, JavaScript."
     },
     {
-      "company": "THE ODIN PROJECT - Intermediate HTML and CSS",
-      "degree": "2022 - HTML, CSS",
+      "company": "THE ODIN PROJECT",
+      "degree": "2022 - Intermediate HTML and CSS",
       "description": "Utbildning i HTML och CSS."
     },
     {
