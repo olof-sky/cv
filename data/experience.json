@@ -53,16 +53,10 @@
       "link": "https://github.com/olof-sky/movie-app"
     },
     {
-      "title": "KANBAN APPLIKATION - PÅGÅENDE",
+      "title": "ART APP",
       "type": "Backend/Frontend",
-      "description": "CRUD, REST API, MySQL Relationsdatabas. Controller/Servicelayer, validering och säkerhet. Byggs med Node.js/express serverside och Sequelize för att kontakta DB. Löst kopplad till React frontend med axios API calls från separat server.",
-      "link": "https://github.com/olof-sky/kanban-app"
-    },
-    {
-      "title": "PERSONLIG WEBBPORTFOLIO",
-      "type": "Backend/Frontend",
-      "description": "Min personliga portfolio online skriven från grunden i vue.js, twilio sendgrid används med mailserver och appen hostas med node/express på mitt webhotell.",
-      "link": "https://olofschylander.com"
+      "description": "Byggs med React. Hämtar konstdata med hjälp av API från rijksmuseum i Nederländerna. Visar upp konst och länkar konstnären med API fetches till wikipedia",
+      "link": "https://github.com/olof-sky/art-app"
     },
     {
       "title": "WEBBAPPLIKATION, HJÄLPVERKTYG",
