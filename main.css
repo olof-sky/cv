@@ -100,7 +100,7 @@ nav {
   background-image: url("./assets/bkg.jpg");
   background-repeat: no-repeat;
   background-clip: border-box;
-  background-size: 100%;
+  background-size: 90%;
   height: calc(0.5625 * 98vw);
   max-height: 100vh;
   width: 100%;
