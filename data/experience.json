@@ -47,16 +47,16 @@
   ],
   "projects": [
     {
+      "title": "ART APP",
+      "type": "Frontend",
+      "description": "Byggd i React. Hämtar konstdata med hjälp av API från rijksmuseum i Nederländerna. Visar upp konst och länkar konstnären med API fetches till wikipedia",
+      "link": "https://github.com/olof-sky/art-app"
+    },
+    {
       "title": "MOVIE APP",
       "type": "Frontend",
       "description": "Arbete med API-anropp mot omdb för att hämta filmdata, spara favoriter och historik.",
       "link": "https://github.com/olof-sky/movie-app"
-    },
-    {
-      "title": "ART APP",
-      "type": "Backend/Frontend",
-      "description": "Byggs med React. Hämtar konstdata med hjälp av API från rijksmuseum i Nederländerna. Visar upp konst och länkar konstnären med API fetches till wikipedia",
-      "link": "https://github.com/olof-sky/art-app"
     },
     {
       "title": "WEBBAPPLIKATION, HJÄLPVERKTYG",
